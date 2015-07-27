@@ -9,8 +9,8 @@ namespace FindFileExtensions
 {
     class Program
     {
-        public static string Extension = ".dll";
-        public static string SearchDir = "C:\\Program Files";
+        public static string Extension = ".pdf";
+        public static string SearchDir = "C:\\Users\\Jdryden\\Downloads";
         public static string OutputDir = "C:\\Users\\Jdryden\\Documents\\TestCopy";
 
         static void Main(string[] args)
@@ -18,13 +18,27 @@ namespace FindFileExtensions
             DirectoryInfo dir = new DirectoryInfo(SearchDir);
             List<FileInfo> matchingFiles = FindFilesByExt(dir, Extension, true);
 
+            int total = matchingFiles.Count;
+            /*
+            Console.WriteLine("Test sting: asdbfajsiodj");
+            Console.ReadLine();
+            Console.SetCursorPosition(1,0);
+            Console.WriteLine("Done");
+            */
+            int counter = 1;
+            
             foreach (FileInfo file in matchingFiles)
             {
-                Console.WriteLine(file.FullName);
+                file.CopyTo(OutputDir + "\\" + file.Name, true);
+                Console.SetCursorPosition(1,0);
+                Console.WriteLine("Copying... {0,3}%", (counter / total) * 100);
+                counter++;
             }
-
+            
             Console.ReadLine();
         }
+
+
 
 
         /// <summary>
