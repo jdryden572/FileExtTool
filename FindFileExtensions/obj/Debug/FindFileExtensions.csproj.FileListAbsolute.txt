@@ -1,0 +1,6 @@
+c:\users\jdryden\documents\visual studio 2013\Projects\FindFileExtensions\FindFileExtensions\bin\Debug\FindFileExtensions.exe.config
+c:\users\jdryden\documents\visual studio 2013\Projects\FindFileExtensions\FindFileExtensions\bin\Debug\FindFileExtensions.exe
+c:\users\jdryden\documents\visual studio 2013\Projects\FindFileExtensions\FindFileExtensions\bin\Debug\FindFileExtensions.pdb
+c:\users\jdryden\documents\visual studio 2013\Projects\FindFileExtensions\FindFileExtensions\obj\Debug\FindFileExtensions.csprojResolveAssemblyReference.cache
+c:\users\jdryden\documents\visual studio 2013\Projects\FindFileExtensions\FindFileExtensions\obj\Debug\FindFileExtensions.exe
+c:\users\jdryden\documents\visual studio 2013\Projects\FindFileExtensions\FindFileExtensions\obj\Debug\FindFileExtensions.pdb
