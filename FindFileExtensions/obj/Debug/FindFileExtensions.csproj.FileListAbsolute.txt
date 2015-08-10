@@ -10,3 +10,9 @@ C:\Users\Jdryden\Documents\Visual Studio 2013\Projects\FindFileExtensions\FileEx
 C:\Users\Jdryden\Documents\Visual Studio 2013\Projects\FindFileExtensions\FileExtTool\FindFileExtensions\bin\Debug\FindFileExtensions.exe
 C:\Users\Jdryden\Documents\Visual Studio 2013\Projects\FindFileExtensions\FileExtTool\FindFileExtensions\bin\Debug\FindFileExtensions.pdb
 C:\Users\Jdryden\Documents\Visual Studio 2013\Projects\FindFileExtensions\FileExtTool\FindFileExtensions\obj\Debug\FindFileExtensions.csprojResolveAssemblyReference.cache
+C:\Users\James\Documents\Visual Studio 2015\Projects\FileExtTool\FindFileExtensions\bin\Debug\FindFileExtensions.exe.config
+C:\Users\James\Documents\Visual Studio 2015\Projects\FileExtTool\FindFileExtensions\obj\Debug\FindFileExtensions.exe
+C:\Users\James\Documents\Visual Studio 2015\Projects\FileExtTool\FindFileExtensions\obj\Debug\FindFileExtensions.pdb
+C:\Users\James\Documents\Visual Studio 2015\Projects\FileExtTool\FindFileExtensions\bin\Debug\FindFileExtensions.exe
+C:\Users\James\Documents\Visual Studio 2015\Projects\FileExtTool\FindFileExtensions\bin\Debug\FindFileExtensions.pdb
+C:\Users\James\Documents\Visual Studio 2015\Projects\FileExtTool\FindFileExtensions\obj\Debug\FindFileExtensions.csprojResolveAssemblyReference.cache

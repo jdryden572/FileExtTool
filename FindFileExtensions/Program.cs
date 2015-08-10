@@ -9,32 +9,44 @@ namespace FindFileExtensions
 {
     class Program
     {
-        public static string Extension = ".pdf";
-        public static string SearchDir = "C:\\Users\\Jdryden\\Downloads";
-        public static string OutputDir = "C:\\Users\\Jdryden\\Documents\\TestCopy";
+        public static string Extension = ".jpg";
+        public static string SearchDir = "D:\\Pictures";
+        public static string OutputDir = "E:\\test";
+        public static DateTime startTime = DateTime.Now;
 
         static void Main(string[] args)
         {
             DirectoryInfo dir = new DirectoryInfo(SearchDir);
             List<FileInfo> matchingFiles = FindFilesByExt(dir, Extension, true);
 
-            int total = matchingFiles.Count;
+            float total = matchingFiles.Count;
+
+            long size = matchingFiles.Sum(f => f.Length)/1000000;
+            Console.WriteLine("{0} files found, {1} MB", total, size);
+            Console.WriteLine("Copy files to {0} ? (y/n)", OutputDir);
+            string proceed = Console.ReadLine().ToUpper();
             /*
             Console.WriteLine("Test sting: asdbfajsiodj");
             Console.ReadLine();
             Console.SetCursorPosition(1,0);
             Console.WriteLine("Done");
             */
-            int counter = 1;
-            
-            foreach (FileInfo file in matchingFiles)
+            if (proceed == "Y")
             {
-                file.CopyTo(OutputDir + "\\" + file.Name, true);
-                Console.SetCursorPosition(1,0);
-                Console.WriteLine("Copying... {0,3}%", (counter / total) * 100);
-                counter++;
+                float counter = 1;
+
+                foreach (FileInfo file in matchingFiles)
+                {
+                    //file.CopyTo(OutputDir + "\\" + file.Name, true);
+                    Console.SetCursorPosition(1, 3);
+                    Console.WriteLine("Copying... {0}%", ((counter / total) * 100).ToString("F0"));
+                    counter++;
+                }
+
+                Console.WriteLine(DateTime.Now - startTime);
             }
-            
+
+
             Console.ReadLine();
         }
 
@@ -53,7 +65,7 @@ namespace FindFileExtensions
             List<FileInfo> files = new List<FileInfo>();
 
             files.AddRange(from f in root.EnumerateFiles()
-                           where f.Extension == ext
+                           where f.Extension.ToUpper() == ext.ToUpper()
                            select f);
 
             if (recursive)
